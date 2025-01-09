@@ -17,7 +17,10 @@ module.exports = {
         spaceGrotesk: ["Space Grotesk", "serif"],
       },
       backgroundImage: {
-        HeroLayer:"url('/public/assets/images/png/hero-bg-layer.png')"
+        HeroLayer: "url('/public/assets/images/png/hero-bg-layer.png')",
+      },
+      colors: {
+        "light-gray": "#1D1D1D",
       },
     },
   },
