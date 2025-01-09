@@ -3,14 +3,15 @@ import CustomHeading from "../common/CustomHeading";
 import { SERCVICE_LIST } from "../utils/helper";
 
 const Services = () => {
-  return (
+    return (
+        <div className="relative">
     <div className="container pt-[136px] max-xl:pt-28 max-lg:pt-20 max-md:pt-14 max-sm:pt-10">
       <div className="max-w-[570px] mx-auto relative">
         <CustomHeading headingText="Services" />
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
           alt="borders"
-          className=" absolute -top-3 left-16 max-lg:-top-6"
+          className=" absolute -top-3 max-xl:-top-9 left-16 max-lg:-top-6 max-lg:hidden"
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
@@ -37,7 +38,8 @@ const Services = () => {
           </div>
         ))}
       </div>
-    </div>
+            </div>
+            </div>
   );
 };
 

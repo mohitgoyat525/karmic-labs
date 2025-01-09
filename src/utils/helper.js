@@ -69,3 +69,20 @@ export const SERCVICE_LIST = [
     description: "NFT solutions from start to finish. From Initial Concept to Secondary market listings, we will guide you every step of the way to ensure your project is a successfully and seemlessly delivered come mint day.",
   },
 ];
+
+export const CARDS_LIST = [
+  "/assets/images/png/projects-img-one.png",
+  "/assets/images/png/projects-img-two.png",
+  "/assets/images/png/projects-img-three.png",
+  "/assets/images/png/projects-img-four.png",
+  "/assets/images/png/projects-img-five.png",
+  "/assets/images/png/projects-img-six.png",
+  "/assets/images/png/projects-img-seven.png",
+  "/assets/images/png/projects-img-eight.png",
+]
+
+export const KARMIC_LIST = [
+  "/assets/images/png/karmic-img-one.png",
+  "/assets/images/png/karmic-img-two.png",
+  "/assets/images/png/karmic-img-three.png",
+]

@@ -9,7 +9,7 @@ const UpcomingProjects = () => {
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
           alt="border"
-          className=" absolute -top-3 left-[15%] max-xl:-top-9 max-sm:hidden"
+          className=" absolute -top-3 left-[15%] max-xl:-top-9 max-lg:hidden"
         />
       </div>
       <div className="flex items-center gap-7 mt-11  max-xl:flex-wrap max-xl:justify-center">
