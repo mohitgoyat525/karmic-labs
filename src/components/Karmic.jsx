@@ -3,16 +3,16 @@ import CustomHeading from '../common/CustomHeading';
 import { KARMIC_LIST } from '../utils/helper';
 const Karmic = () => {
   return (
-    <div className="container py-20 max-xl:py-14 max-lg:py-10">
+    <div id="about" className="container py-20 max-xl:py-14 max-lg:py-10">
       <div className="max-w-[606px] mx-auto relative">
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
           alt="border"
-          className=" absolute -top-3 left-[15%] max-lg:hidden max-xl:-top-12"
+          className=" absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-9 max-sm:left-0"
         />
         <CustomHeading headingText="Karmic" />
       </div>
-      <p className="text-white font-normal text-base font-spaceGrotesk text-center pt-9">
+      <p className="text-white font-normal text-base font-spaceGrotesk text-center pt-9 max-md:pt-14">
         We are builders, innovaters, and believers.
       </p>
       <p className="text-white text-base font-normal max-w-[570px] mx-auto text-center leading-[28.8px]">
@@ -25,7 +25,7 @@ const Karmic = () => {
             src={obj}
             alt="karmic"
             key={i}
-            className="w-full max-w-[369px]"
+            className="w-full max-w-[369px] pointer-events-none"
           />
         ))}
       </div>

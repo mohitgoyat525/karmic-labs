@@ -3,13 +3,13 @@ import CustomHeading from '../common/CustomHeading'
 import {PROJECTS_LIST} from '../utils/helper'
 const UpcomingProjects = () => {
   return (
-    <div className="container pt-24 max-xl:pt-20 max-lg:pt-14 max-md:pt-10 relative z-30">
+    <div className="container pt-24 max-xl:pt-20 max-lg:py-14 max-md:py-10 relative z-30">
       <div className="relative max-w-[606px] mx-auto">
         <CustomHeading headingText="Upcoming Projects" />
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
           alt="border"
-          className=" absolute -top-3 left-[15%] max-xl:-top-9 max-lg:hidden"
+          className=" absolute -top-3 left-[15%] max-xl:-top-9 max-sm:left-0  pointer-events-none"
         />
       </div>
       <div className="flex items-center gap-7 mt-11  max-xl:flex-wrap max-xl:justify-center">
@@ -35,7 +35,9 @@ const UpcomingProjects = () => {
           </div>
         ))}
       </div>
-      <button className="border border-solid border-white rounded-[82px] flex items-center justify-center py-3 text-white font-medium leading-5 text-base bg-transparent transition-all ease-linear duration-200 hover:bg-white hover:text-black max-w-[119px] mx-auto mt-12 px-[30px]">View All</button>
+      <button className="border border-solid border-white rounded-[82px] flex items-center justify-center py-3 text-white font-medium leading-5 text-base bg-transparent transition-all ease-linear duration-200 hover:bg-white hover:text-black max-w-[119px] mx-auto mt-12 px-[30px]">
+        View All
+      </button>
     </div>
   );
 }

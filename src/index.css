@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+*{
+   scroll-behavior: smooth !important;
+}
+
 body{
    font-family: "Sunflower", serif;
    background-image: url(/public/assets/images/png/body-bg-img.png);
@@ -16,4 +20,9 @@ body{
 .card-shadow{
    backdrop-filter: blur(30px);
 box-shadow: 0px -1px 20px 0px #FFFFFF1A;
+}
+
+.custom-blur{
+   backdrop-filter: blur(16px);
+box-shadow: 0px 4px 20px 0px #00000026;
 }

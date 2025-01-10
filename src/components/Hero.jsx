@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="flex items-center max-xl:pt-20 max-lg:flex-wrap max-md:pt-16 max-xl:!justify-center pt-32 gap-[158px] max-xl:gap-32 max-lg:gap-24 max-md:gap-16 max-sm:gap-10">
             <div className="w-6/12 max-md:w-full">
               <h1 className="text-white text-custom5xl max-w-[570px] max-lg:max-w-none max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-light leading-[69.56px] uppercase">
-                We are believers decentralization and{" "}
+                We are believers decentralization and
                 <span className="relative">
                   <img
                     className="absolute -top-2 right-0"

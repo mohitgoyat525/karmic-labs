@@ -18,14 +18,15 @@ module.exports = {
       },
       backgroundImage: {
         HeroLayer: "url('/public/assets/images/png/hero-bg-layer.png')",
-        whiteImg : "url('/public/assets/images/png/bg-white.png')",
+        whiteImg: "url('/public/assets/images/png/bg-white.png')",
       },
       colors: {
         "light-gray": "#1D1D1D",
+        "dark-black": "#040404",
       },
       fontSize: {
-        "custom5xl": "64px",
-        "custom4xl":"56px",
+        custom5xl: "64px",
+        custom4xl: "56px",
       },
     },
   },

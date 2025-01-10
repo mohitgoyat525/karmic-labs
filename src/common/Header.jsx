@@ -1,29 +1,29 @@
-import React, { useEffect, useState } from 'react'
-import { NAVBAR_LIST } from '../utils/helper';
+import React, { useEffect, useState } from "react";
+import { NAVBAR_LIST } from "../utils/helper";
 
 const Header = () => {
-      const [isOpen, setIsOpen] = useState(false);
-      const handler = () => {
-        setIsOpen(!isOpen);
-      };
+  const [isOpen, setIsOpen] = useState(false);
+  const handler = () => {
+    setIsOpen(!isOpen);
+  };
 
-      useEffect(() => {
-        if (isOpen) {
-          document.body.classList.add("overflow-hidden");
-        } else {
-          document.body.classList.remove("overflow-hidden");
-        }
-        return () => {
-          document.body.classList.remove("overflow-hidden");
-        };
-      }, [isOpen]);
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
   return (
     <nav className="flex items-center justify-between">
       <a href="/">
         <img
           src="/assets/images/png/logo.png"
           alt="logo"
-          className="w-full max-w-[156px] max-xl:max-w-[160px] pt-6 max-lg:pt-5 max-sm:pt-4"
+          className="w-full max-w-[156px] max-xl:max-w-[160px] pt-[11px]"
         />
       </a>
 
@@ -37,20 +37,20 @@ const Header = () => {
             <li key={i} className={`${i === 6 ? "hidden" : ""}`}>
               <a
                 href={obj.link}
-                className="transition-all ease-linear duration-300 hover:scale-95 text-base font-medium text-white"
+                className="transition-all ease-linear duration-300 hover:scale-105 text-base font-medium text-white"
               >
                 {obj.name}
               </a>
             </li>
           ))}
           <li>
-            <button className="lg:hidden min-w-[172px] py-3 rounded-full bg-white text-base font-bold text-[#040404]">
+            <button className="lg:hidden min-w-[172px] py-3 rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white">
               Connect Wallet
             </button>
           </li>
         </ul>
       </div>
-      <button className="max-lg:hidden min-w-[170px] py-3 rounded-full bg-white text-base font-bold text-[#040404]">
+      <button className="max-lg:hidden min-w-[170px] py-3 rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white">
         Connect Wallet
       </button>
       <button
@@ -75,6 +75,6 @@ const Header = () => {
       </button>
     </nav>
   );
-}
+};
 
-export default Header
+export default Header;
