@@ -21,8 +21,3 @@ body{
    backdrop-filter: blur(30px);
 box-shadow: 0px -1px 20px 0px #FFFFFF1A;
 }
-
-.custom-blur{
-   backdrop-filter: blur(16px);
-box-shadow: 0px 4px 20px 0px #00000026;
-}

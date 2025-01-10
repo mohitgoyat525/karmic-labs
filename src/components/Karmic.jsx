@@ -4,11 +4,11 @@ import { KARMIC_LIST } from '../utils/helper';
 const Karmic = () => {
   return (
     <div id="about" className="container py-20 max-xl:py-14 max-lg:py-10">
-      <div className="max-w-[606px] mx-auto relative">
+      <div className="max-w-[606px] max-sm:max-w-[320px] mx-auto relative">
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
           alt="border"
-          className=" absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-9 max-sm:left-0"
+          className=" absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-9 max-sm:max-w-[261px] max-sm:-top-6"
         />
         <CustomHeading headingText="Karmic" />
       </div>

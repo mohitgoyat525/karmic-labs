@@ -1,3 +1,5 @@
+import { FacebookIcon, InstagramIcon, TwitterIcon, YoutubeIcon } from "./icons";
+
 export const NAVBAR_LIST = [
   { name: "Home", link: "#home" },
   { name: "Services", link: "#services" },
@@ -86,3 +88,40 @@ export const KARMIC_LIST = [
   "/assets/images/png/karmic-img-two.png",
   "/assets/images/png/karmic-img-three.png",
 ]
+
+export const VALUE_LIST = [
+  {
+    icon: "/assets/images/svg/people-icon.svg",
+    title: "W3",
+    description:
+      "Not your average degens. Karmic is lead by a team of Industry professionals with extensive backgrounds in web3 and web2. We are actively involved in all that we do. Boots on the ground. We know the ins and outs of the space, because we are building it.",
+  },
+  {
+    icon: "/assets/images/svg/block-chain-icon.svg",
+    title: "Blockchain Agnostic",
+    description:
+      "Our team of seasoned developers will help you to launch your project on the network of your choosing- be it ethereum, solana, polygon, etc..",
+  },
+  {
+    icon: "/assets/images/svg/trust-icon.svg",
+    title: "Trust",
+    description:
+      "Trustless and results driven development backed by a portfolio of success. You're the captain of the ship, and the keys are always in your hands.",
+  },
+];
+
+export const FOOTER_LIST = [
+  {
+    icon: "/assets/images/svg/instagram-icon.svg",
+    link: "https://www.instagram.com/",
+  },
+  { icon: "/assets/images/svg/twitter-icon.svg", link: "https://www.x.com/" },
+  {
+    icon: "/assets/images/svg/facebook-icon.svg",
+    link: "https://www.facebook.com/",
+  },
+  {
+    icon: "/assets/images/svg/youtube-icon.svg",
+    link: "https://www.youtube.com/",
+  },
+];

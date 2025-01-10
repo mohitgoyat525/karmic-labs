@@ -5,6 +5,8 @@ import UpcomingProjects from './components/UpcomingProjects';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import Karmic from './components/Karmic';
+import Value from './components/Value';
+import Footer from './common/Footer';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <UpcomingProjects />
       <Services />
       <Projects />
-      <Karmic/>
+      <Karmic />
+      <Value />
+      <Footer/>
    </div>
   );
 }

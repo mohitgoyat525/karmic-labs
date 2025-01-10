@@ -23,6 +23,8 @@ module.exports = {
       colors: {
         "light-gray": "#1D1D1D",
         "dark-black": "#040404",
+        "sky-blue": "#AFE5FF",
+        "gray": "#4D4D4D",
       },
       fontSize: {
         custom5xl: "64px",

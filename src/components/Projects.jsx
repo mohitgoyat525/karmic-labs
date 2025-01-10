@@ -3,18 +3,21 @@ import CustomHeading from "../common/CustomHeading";
 import { CARDS_LIST } from "../utils/helper";
 const Projects = () => {
   return (
-    <div id="projects" className="bg-cover bg-center bg-no-repeat h-[902px] max-lg:h-full bg-whiteImg relative">
+    <div
+      id="projects"
+      className="bg-cover bg-center bg-no-repeat h-[902px] max-xl:h-full bg-whiteImg relative"
+    >
       <img
         src="/assets/images/png/services-right-layer.png"
         alt="layer"
         className=" absolute -top-[38%] left-0 z-0"
       />
       <div className="container pt-24 max-xl:py-32">
-        <div className="max-w-[540px] mx-auto relative">
+        <div className="max-w-[540px] mx-auto relative max-sm:max-w-[320px]">
           <img
             src="/assets/images/png/black-border.png"
             alt="border"
-            className=" absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-8 max-sm:left-0"
+            className=" absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-8 max-sm:max-w-[261px] max-sm:-top-6"
           />
           <CustomHeading
             headingText="Projects"
@@ -26,14 +29,30 @@ const Projects = () => {
           egestas vehicula tellus. Molestie adipiscing diam nibh lectus. Magna
           id nisl quis vestibulum rhoncus.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 pt-6">
-          {CARDS_LIST.map((obj, i) => (
-            <div key={i}>
-              <img
-                src={obj}
-                alt="projectName"
-                className="w-full max-w-[273px] transition-all ease-linear duration-200 hover:scale-110"
-              />
+        <div className="flex max-w-[1140px] pt-[53px] gap-y-6 max-lg:gap-6 w-full max-xl:justify-center mx-auto flex-wrap">
+          {CARDS_LIST.map((item, index) => (
+            <div
+              key={index}
+              className={`w-3/12 flex max-xl:w-4/12 max-md:w-6/12 max-xl:justify-center max-xl:flex  `}
+            >
+              <div
+                className={`max-w-[273px] hover:scale-125 hover:!z-20 overflow-hidden group transition-all relative duration-300 cursor-pointer flex w-full rounded-lg justify-center  ${
+                  index === 0 ? "bg-sky-blue" : ""
+                }`}
+              >
+                <img
+                  className={` w-full rounded-lg ${
+                    index === 0 ? "max-w-[174px]" : "max-w-[273px]"
+                  }`}
+                  src={item}
+                  alt={item}
+                />
+                <div className="absolute min-h-[47px] flex justify-center items-center bg-gray transition-all duration-300 w-full group-hover:bottom-0 bottom-[-50%]">
+                  <p className="text-white text-xl leading-[21px] font-bold">
+                    Nubbies
+                  </p>
+                </div>
+              </div>
             </div>
           ))}
         </div>

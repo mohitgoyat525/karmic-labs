@@ -4,12 +4,12 @@ import {PROJECTS_LIST} from '../utils/helper'
 const UpcomingProjects = () => {
   return (
     <div className="container pt-24 max-xl:pt-20 max-lg:py-14 max-md:py-10 relative z-30">
-      <div className="relative max-w-[606px] mx-auto">
+      <div className="relative max-w-[606px] mx-auto max-sm:max-w-[320px]">
         <CustomHeading headingText="Upcoming Projects" />
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
           alt="border"
-          className=" absolute -top-3 left-[15%] max-xl:-top-9 max-sm:left-0  pointer-events-none"
+          className=" absolute -top-3 left-[15%] max-xl:-top-9 max-sm:max-w-[261px] pointer-events-none max-sm:-top-6"
         />
       </div>
       <div className="flex items-center gap-7 mt-11  max-xl:flex-wrap max-xl:justify-center">
