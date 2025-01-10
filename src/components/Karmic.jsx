@@ -3,7 +3,7 @@ import CustomHeading from '../common/CustomHeading';
 import { KARMIC_LIST } from '../utils/helper';
 const Karmic = () => {
   return (
-    <div className="container pt-20 max-xl:pt-14 max-lg:pt-10">
+    <div className="container py-20 max-xl:py-14 max-lg:py-10">
       <div className="max-w-[606px] mx-auto relative">
         <img
           src="/assets/images/png/heading-top-bttom-border.png"
