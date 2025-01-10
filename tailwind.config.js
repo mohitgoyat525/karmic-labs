@@ -23,6 +23,10 @@ module.exports = {
       colors: {
         "light-gray": "#1D1D1D",
       },
+      fontSize: {
+        "custom5xl": "64px",
+        "custom4xl":"56px",
+      },
     },
   },
   plugins: [],

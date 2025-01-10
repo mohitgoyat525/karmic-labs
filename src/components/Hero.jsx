@@ -17,8 +17,21 @@ const Hero = () => {
         <div className="container">
           <div className="flex items-center max-xl:pt-20 max-lg:flex-wrap max-md:pt-16 max-xl:!justify-center pt-32 gap-[158px] max-xl:gap-32 max-lg:gap-24 max-md:gap-16 max-sm:gap-10">
             <div className="w-6/12 max-md:w-full">
-              <h1 className="text-white text-[64px] max-w-[570px] max-lg:max-w-none max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-light leading-[69.56px] uppercase">
-                We are believers decentralization and <span className='relative'><img className='absolute -top-2 right-0' src="/assets/images/png/hero-border-top.png" alt="border-top"/> Web3. <img className='absolute bottom-0 right-0' src="/assets/images/png/hero-border-bottom.png" alt="border-bottom" /> </span>
+              <h1 className="text-white text-custom5xl max-w-[570px] max-lg:max-w-none max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-light leading-[69.56px] uppercase">
+                We are believers decentralization and{" "}
+                <span className="relative">
+                  <img
+                    className="absolute -top-2 right-0"
+                    src="/assets/images/png/hero-border-top.png"
+                    alt="border-top"
+                  />{" "}
+                  Web3.{" "}
+                  <img
+                    className="absolute bottom-0 right-0"
+                    src="/assets/images/png/hero-border-bottom.png"
+                    alt="border-bottom"
+                  />{" "}
+                </span>
               </h1>
               <p className="font-normal text-base text-white max-w-[570px] max-lg:max-w-none leading-[28.8px] font-spaceGrotesk">
                 Vulputate tristique habitant neque, accumsan. Vitae ultrices
