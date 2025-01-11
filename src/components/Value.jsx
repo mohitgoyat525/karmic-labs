@@ -13,7 +13,7 @@ const Value = () => {
           className="absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-9 max-sm:max-w-[261px] max-sm:-top-6"
         />
       </div>
-      <div className="flex pt-20 max-xl:flex-wrap max-xl:justify-center">
+      <div className="flex pt-20 max-xl:flex-wrap max-xl:justify-center gap-4">
         {VALUE_LIST.map((obj, i) => (
           <div key={i} className="relative z-20 bg-transparent group">
             <div className="absolute size-[74px] rounded-full bg-white border border-solid border-white -top-6 -right-8 max-xl:top-0  max-xl:right-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

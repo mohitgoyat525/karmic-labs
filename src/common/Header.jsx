@@ -6,16 +6,23 @@ const Header = () => {
   const handler = () => {
     setIsOpen(!isOpen);
   };
-  useEffect(() => {
-    if (isOpen) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-    return () => {
-      document.body.classList.remove("overflow-hidden");
-    };
-  }, [isOpen]);
+ useEffect(() => {
+   const handleOverflow = () => {
+     if (isOpen && window.innerWidth < 1024) {
+       document.body.classList.add("overflow-hidden");
+     } else {
+       document.body.classList.remove("overflow-hidden");
+     }
+   };
+
+   handleOverflow(); // Check on state change
+   window.addEventListener("resize", handleOverflow); // Check on window resize
+
+   return () => {
+     document.body.classList.remove("overflow-hidden");
+     window.removeEventListener("resize", handleOverflow);
+   };
+ }, [isOpen]);
   return (
     <nav className="flex items-center justify-between">
       <a href="/">
@@ -36,7 +43,7 @@ const Header = () => {
             <li key={i} className={`${i === 6 ? "hidden" : ""}`}>
               <a
                 href={obj.link}
-                onClick={handler}
+                onClick={ handler}
                 className="transition-all ease-linear duration-300 hover:scale-105 text-base font-medium text-white"
               >
                 {obj.name}
@@ -44,7 +51,10 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <button onClick={handler} className="lg:hidden min-w-[172px] py-3 rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white">
+            <button
+              onClick={handler}
+              className="lg:hidden min-w-[172px] py-3 rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white"
+            >
               Connect Wallet
             </button>
           </li>

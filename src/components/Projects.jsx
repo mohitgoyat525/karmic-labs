@@ -34,14 +34,12 @@ const Projects = () => {
             {CARDS_LIST.map((item, index) => (
               <div key={index} className="flex justify-center">
                 <div
-                  className={`hover:scale-125 max-md:scale-90 max-sm:h-[156px] hover:!z-20 overflow-hidden group transition-all relative duration-300 cursor-pointer flex w-full rounded-lg justify-center ${
+                  className={`hover:scale-125 max-xl:hover:scale-110 max-md:scale-90 max-sm:h-[156px] hover:!z-20 overflow-hidden group transition-all relative duration-300 cursor-pointer flex w-full rounded-lg justify-center ${
                     index === 0 ? "bg-sky-blue" : ""
                   }`}
                 >
                   <img
-                    className={`w-full rounded-lg ${
-                      index === 0 ? "max-w-[174px]" : "max-w-[273px]"
-                    }`}
+                    className={`w-full rounded-lg }`}
                     src={item}
                     alt={`Card ${index}`}
                   />
