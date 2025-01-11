@@ -4,12 +4,12 @@ import { FOOTER_LIST } from '../utils/helper'
 const Footer = () => {
     const year = new Date().getFullYear();
   return (
-    <footer className="pt-[172px] max-xl:pt-36 max-lg:pt-32 max-md:pt-24 max-sm:pt-14">
+    <footer className="pt-[172px] max-xl:pt-0">
       <a href="/">
         <img
           src="/assets/images/png/footer-logo.png"
           alt="logo"
-          className="w-full max-w-[255px] mx-auto"
+          className="w-full max-w-[255px] mx-auto max-md:max-w-[200px]"
         />
       </a>
       <div className="flex items-center gap-6 justify-center mt-20 max-lg:mt-14 max-md:mt-10">

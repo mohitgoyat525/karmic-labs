@@ -30,31 +30,30 @@ const Projects = () => {
           id nisl quis vestibulum rhoncus.
         </p>
         <div className="flex max-w-[1140px] pt-[53px] gap-y-6 max-lg:gap-6 w-full max-xl:justify-center mx-auto flex-wrap">
-          {CARDS_LIST.map((item, index) => (
-            <div
-              key={index}
-              className={`w-3/12 flex max-xl:w-4/12 max-md:w-6/12 max-xl:justify-center max-xl:flex  `}
-            >
-              <div
-                className={`max-w-[273px] hover:scale-125 hover:!z-20 overflow-hidden group transition-all relative duration-300 cursor-pointer flex w-full rounded-lg justify-center  ${
-                  index === 0 ? "bg-sky-blue" : ""
-                }`}
-              >
-                <img
-                  className={` w-full rounded-lg ${
-                    index === 0 ? "max-w-[174px]" : "max-w-[273px]"
+          <div className="grid grid-cols-4 gap-4 max-xl:grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1">
+            {CARDS_LIST.map((item, index) => (
+              <div key={index} className="flex justify-center">
+                <div
+                  className={`hover:scale-125 max-md:scale-90 max-sm:h-[156px] hover:!z-20 overflow-hidden group transition-all relative duration-300 cursor-pointer flex w-full rounded-lg justify-center ${
+                    index === 0 ? "bg-sky-blue" : ""
                   }`}
-                  src={item}
-                  alt={item}
-                />
-                <div className="absolute min-h-[47px] flex justify-center items-center bg-gray transition-all duration-300 w-full group-hover:bottom-0 bottom-[-50%]">
-                  <p className="text-white text-xl leading-[21px] font-bold">
-                    Nubbies
-                  </p>
+                >
+                  <img
+                    className={`w-full rounded-lg ${
+                      index === 0 ? "max-w-[174px]" : "max-w-[273px]"
+                    }`}
+                    src={item}
+                    alt={`Card ${index}`}
+                  />
+                  <div className="absolute bottom-[-50%] group-hover:bottom-0 min-h-[47px] flex justify-center items-center bg-gray transition-all duration-300 w-full">
+                    <p className="text-white text-xl leading-[21px] font-bold">
+                      Nubbies
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <div className="flex items-center justify-center ">
           <button className="text-black text-sm leading-5 transition-all ease-linear duration-200 hover:bg-black hover:text-white max-w-[119px] mx-auto py-3 border border-solid border-black rounded-full px-8 mt-10">
