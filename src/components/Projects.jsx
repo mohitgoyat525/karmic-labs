@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="bg-cover bg-center bg-no-repeat h-[902px] max-xl:h-full bg-whiteImg relative"
+      className="bg-cover bg-center bg-no-repeat h-[902px] max-xl:h-full bg-whiteImg relative z-40"
     >
       <img
         src="/assets/images/png/services-right-layer.png"

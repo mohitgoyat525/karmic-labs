@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../common/Header'
-import { NextArrow } from '../utils/icons';
+import { HeroArrow, NextArrow } from '../utils/icons';
 
 const Hero = () => {
   return (
@@ -10,6 +10,12 @@ const Hero = () => {
         alt="layer"
         className=" absolute top-0 left-0 z-0"
       />
+      <a
+        href="#home"
+        className="absolute left-1/2 -translate-x-1/2 bottom-[10%] max-lg:bottom-0"
+      >
+        <HeroArrow />
+      </a>
       <div className="container relative z-20">
         <Header />
       </div>
