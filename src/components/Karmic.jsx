@@ -3,21 +3,28 @@ import CustomHeading from '../common/CustomHeading';
 import { KARMIC_LIST } from '../utils/helper';
 const Karmic = () => {
   return (
-    <div className="relative">
-      <img src="/assets/images/png/services-section-right-layer.png" alt="layer" className=' absolute top-[-50%] right-0' />
-      <div id="about" className="container py-20 max-xl:py-14 max-lg:py-10 relative z-30">
-        <div className="max-w-[606px] max-sm:max-w-[320px] mx-auto relative">
+    <div className="relative max-w-[1920px] mx-auto">
+      <img
+        src="/assets/images/png/services-section-right-layer.png"
+        alt="layer"
+        className="absolute top-[-50%] right-0"
+      />
+      <div
+        id="about"
+        className="container pt-20 max-xl:pt-14 max-lg:pt-14 relative z-30"
+      >
+        <div className="max-w-[606px] max-sm:max-w-[320px] mx-auto relative max-lg:mt-6">
           <img
-            src="/assets/images/png/heading-top-bttom-border.png"
+            src="/assets/images/png/heading-top-bottom-border.png"
             alt="border"
-            className=" absolute -top-3 left-[15%] max-xl:-top-12 max-md:-top-9 max-sm:max-w-[261px] max-sm:-top-6"
+            className=" absolute -top-7 left-[15%] max-sm:left-5 max-md:left-[25%] max-md:-top-4 max-md:max-w-[261px] max-sm:-top-6"
           />
           <CustomHeading headingText="Who is karmic?" />
         </div>
-        <p className="text-white font-normal text-base font-spaceGrotesk text-center pt-9 max-md:pt-14">
+        <p className="text-white font-normal text-base font-spaceGrotesk text-center pt-5 ">
           We are builders, innovaters, and believers.
         </p>
-        <p className="text-white text-base font-normal max-w-[570px] mx-auto text-center leading-[28.8px]">
+        <p className="text-white text-base font-normal font-spaceGrotesk max-w-[570px] mx-auto text-center leading-[28.8px]">
           We believe in a future that rests in your hands, and yours alone. The
           future is decentralized, The future is web3.
         </p>

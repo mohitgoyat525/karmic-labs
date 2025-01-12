@@ -15,21 +15,22 @@ const Header = () => {
      }
    };
 
-   handleOverflow(); // Check on state change
-   window.addEventListener("resize", handleOverflow); // Check on window resize
+   handleOverflow();
+   window.addEventListener("resize", handleOverflow);
 
    return () => {
      document.body.classList.remove("overflow-hidden");
      window.removeEventListener("resize", handleOverflow);
    };
  }, [isOpen]);
+  
   return (
     <nav className="flex items-center justify-between">
       <a href="/">
         <img
           src="/assets/images/png/logo.png"
           alt="logo"
-          className="w-full max-w-[156px] max-xl:max-w-[160px] pt-[11px]"
+          className="w-full max-w-[156px] max-xl:max-w-[160px] max-md:max-w-[120px] pt-[11px]"
         />
       </a>
 
@@ -43,8 +44,8 @@ const Header = () => {
             <li key={i} className={`${i === 6 ? "hidden" : ""}`}>
               <a
                 href={obj.link}
-                onClick={ handler}
-                className="transition-all ease-linear duration-300 hover:scale-105 text-base font-medium text-white"
+                onClick={handler}
+                className="text-base leading-5 font-medium text-white transition-all ease-linear duration-300 hover:text-sky-blue"
               >
                 {obj.name}
               </a>
@@ -53,14 +54,14 @@ const Header = () => {
           <li>
             <button
               onClick={handler}
-              className="lg:hidden min-w-[172px] py-3 rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white"
+              className="lg:hidden min-w-[172px] py-[9.5px] rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white"
             >
               Connect Wallet
             </button>
           </li>
         </ul>
       </div>
-      <button className="max-lg:hidden min-w-[170px] py-3 rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white">
+      <button className="max-lg:hidden min-w-[170px] py-[9.5px] rounded-full border border-solid border-transparent bg-white hover:border-white text-base font-bold text-dark-black transition-all ease-linear duration-200 hover:bg-black hover:text-white">
         Connect Wallet
       </button>
       <button

@@ -34,7 +34,7 @@ export const PROJECTS_LIST = [
   },
 ];
 
-export const SERCVICE_LIST = [
+export const SERVICE_LIST = [
   {
     icon: "/assets/images/svg/smart-contract.svg",
     title: "Smart Contract",
