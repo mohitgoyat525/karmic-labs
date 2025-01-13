@@ -7,7 +7,7 @@ const Projects = () => {
       id="projects"
       className="bg-center bg-no-repeat h-[902px] max-xl:h-full lg:bg-whiteImg bg-hero-bg-set max-lg:bg-white relative z-40"
     >
-      <div className="relative max-w-[1920px] mx-auto">
+      <div className="relative">
         <img
           src="/assets/images/png/services-right-layer.png"
           alt="layer"

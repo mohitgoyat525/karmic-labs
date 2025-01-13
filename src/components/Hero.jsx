@@ -5,7 +5,6 @@ import { HeroArrow, NextArrow } from '../utils/icons';
 const Hero = () => {
   return (
     <div className="relative">
-      <div className="max-w-[1920px] relative mx-auto">
         <img
           src="/assets/images/png/hero-top-layer.png"
           alt="layer"
@@ -14,7 +13,6 @@ const Hero = () => {
         <div className="container relative z-20">
           <Header />
         </div>
-      </div>
       <div className="min-h-[726px] flex justify-center relative items-center max-lg:py-14 max-md:py-10 bg-hero-image bg-hero-set max-xl:!bg-cover bg-no-repeat lg:bg-heroLayer max-lg:bg-off-gray max-lg:mt-9 max-lg:h-full">
         <div className="container">
           <div className="flex items-center max-lg:flex-wrap max-xl:!justify-center gap-[154px] max-xl:gap-20 max-lg:gap-10">

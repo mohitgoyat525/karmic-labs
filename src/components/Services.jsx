@@ -4,7 +4,7 @@ import { SERVICE_LIST } from "../utils/helper";
 
 const Services = () => {
   return (
-    <div id="services" className="relative max-w-[1920px] mx-auto">
+    <div id="services" className="relative">
       <img
         src="/assets/images/png/services-section-right-layer.png"
         alt="layer"

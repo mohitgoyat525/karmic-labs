@@ -3,7 +3,7 @@ import CustomHeading from '../common/CustomHeading';
 import { KARMIC_LIST } from '../utils/helper';
 const Karmic = () => {
   return (
-    <div className="relative max-w-[1920px] mx-auto">
+    <div className="relative">
       <img
         src="/assets/images/png/services-section-right-layer.png"
         alt="layer"

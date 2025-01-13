@@ -4,7 +4,6 @@ import { VALUE_LIST } from "../utils/helper";
 
 const Values = () => {
   return (
-    <div className="max-w-[1920px] mx-auto">
       <div className="container pt-[156px] max-xl:py-16 max-md:py-14">
         <div className="max-w-[570px] mx-auto relative max-sm:max-w-[320px]">
           <CustomHeading headingText="Values" />
@@ -36,7 +35,6 @@ const Values = () => {
           ))}
         </div>
       </div>
-    </div>
   );
 };
 

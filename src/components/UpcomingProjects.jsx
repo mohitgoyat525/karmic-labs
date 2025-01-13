@@ -3,8 +3,11 @@ import CustomHeading from "../common/CustomHeading";
 import { PROJECTS_LIST } from "../utils/helper";
 const UpcomingProjects = () => {
   return (
-    <div id="home" className="relative max-w-[1920px] mx-auto">
-      <div className="container pt-24 max-xl:pt-20 max-lg:py-14 max-sm:py-10 relative z-30">
+    <div className="relative ">
+      <div
+        id="home"
+        className="container pt-24 max-xl:pt-20 max-lg:py-14 max-sm:py-10 relative z-30"
+      >
         <div className="relative max-w-[606px] mx-auto max-sm:max-w-[320px] max-lg:mt-6">
           <CustomHeading headingText="Upcoming Projects" />
           <img
