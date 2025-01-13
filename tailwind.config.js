@@ -17,7 +17,7 @@ module.exports = {
         spaceGrotesk: ["Space Grotesk", "serif"],
       },
       backgroundImage: {
-        HeroLayer: "url('/public/assets/images/webp/hero-bg-layer.webp')",
+        heroLayer: "url('/public/assets/images/webp/hero-bg-layer.webp')",
         whiteImg: "url('/public/assets/images/png/bg-white.png')",
       },
       backgroundSize: {

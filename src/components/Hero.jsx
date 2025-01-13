@@ -15,7 +15,7 @@ const Hero = () => {
           <Header />
         </div>
       </div>
-      <div className="min-h-[726px] flex justify-center relative items-center max-lg:py-14 max-md:py-10 bg-hero-image bg-hero-set max-xl:!bg-cover bg-no-repeat lg:bg-HeroLayer max-lg:bg-off-gray max-lg:mt-9 max-lg:h-full">
+      <div className="min-h-[726px] flex justify-center relative items-center max-lg:py-14 max-md:py-10 bg-hero-image bg-hero-set max-xl:!bg-cover bg-no-repeat lg:bg-heroLayer max-lg:bg-off-gray max-lg:mt-9 max-lg:h-full">
         <div className="container">
           <div className="flex items-center max-lg:flex-wrap max-xl:!justify-center gap-[154px] max-xl:gap-20 max-lg:gap-10">
             <div className="min-w-[570px] max-xl:min-w-[540px] max-lg:min-w-full">
@@ -52,7 +52,7 @@ const Hero = () => {
             </div>
             <div className="min-w-[398px] max-xl:min-w-[374px] max-lg:min-w-full">
               <img
-                src="/assets/images/png/nubbies-img.webp"
+                src="/assets/images/webp/nubbies-img.webp"
                 alt="nubbies-img"
                 className="w-full max-w-[398px] max-lg:mx-auto h-[446.47px] max-lg:h-full"
               />
