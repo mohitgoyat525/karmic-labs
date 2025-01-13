@@ -10,7 +10,7 @@ import Values from './components/Values';
 
 function App() {
   return (
-    <div>
+    <>
       <Hero />
       <UpcomingProjects />
       <Services />
@@ -18,7 +18,7 @@ function App() {
       <Karmic />
       <Values/>
       <Footer/>
-   </div>
+   </>
   );
 }
 
