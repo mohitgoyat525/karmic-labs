@@ -22,7 +22,7 @@ const UpcomingProjects = () => {
               <img
                 src={obj.cardImg}
                 alt="cardImg"
-                className="w-full max-w-[231px]"
+                className="w-full max-w-[231px] pointer-events-none"
               />
               <div className="flex items-center mt-4 justify-between">
                 <h3 className="text-white text-xl font-medium leading-6">

@@ -19,7 +19,7 @@ const Values = () => {
             <div
               key={i}
               className={`relative z-20 bg-transparent group min-w-[369px] max-sm:min-w-[320px] ${
-                i === 1 ? "h-[222px]" : i === 2 ? "h-[222px]" : ""
+                i === 0 ? "" :"h-[222px]"
               }`}
             >
               <div className="absolute size-[74px] rounded-full bg-white border border-solid border-white -top-6 -right-8 max-xl:top-0  max-xl:right-0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

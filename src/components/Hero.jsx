@@ -54,7 +54,7 @@ const Hero = () => {
               <img
                 src="/assets/images/webp/nubbies-img.webp"
                 alt="nubbies-img"
-                className="w-full max-w-[398px] max-lg:mx-auto h-[446.47px] max-lg:h-full"
+                className="w-full max-w-[398px] max-lg:mx-auto h-[446.47px] max-lg:h-full pointer-events-none"
               />
             </div>
           </div>

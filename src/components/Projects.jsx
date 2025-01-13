@@ -11,7 +11,7 @@ const Projects = () => {
         <img
           src="/assets/images/png/services-right-layer.png"
           alt="layer"
-          className=" absolute -top-[38%] left-0 z-0"
+          className=" absolute -top-[38%] left-0 z-0 pointer-events-none"
         />
         <div className="container pt-24 max-xl:py-32 max-lg:py-16 max-md:py-14 max-sm:py-10">
           <div className="max-w-[540px] mx-auto relative max-sm:max-w-[320px] max-md:mt-6">
@@ -40,7 +40,7 @@ const Projects = () => {
                     }`}
                   >
                     <img
-                      className={`w-full rounded-lg h-[174px] min-w-[273px]`}
+                      className={`w-full rounded-lg h-[174px] min-w-[273px] pointer-events-none`}
                       src={item}
                       alt={`Card ${index}`}
                     />
