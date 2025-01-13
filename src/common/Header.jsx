@@ -41,7 +41,7 @@ const Header = () => {
       >
         <ul className="flex items-center gap-9 max-lg:flex-col max-lg:gap-6">
           {NAVBAR_LIST.map((obj, i) => (
-            <li key={i} className={`${i === 6 ? "hidden" : ""}`}>
+            <li key={i}>
               <a
                 href={obj.link}
                 onClick={handler}
