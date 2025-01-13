@@ -55,7 +55,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="flex items-center justify-center ">
-            <button className="text-black text-sm leading-5 flex items-center justify-center transition-all ease-linear duration-200 hover:bg-black hover:text-white w-[119px] mx-auto py-[11.2px] border border-solid border-black rounded-full px-8 mt-10">
+            <button className="text-black text-sm leading-5 flex items-center justify-center transition-all ease-linear duration-200 hover:bg-black hover:text-white w-[119px] mx-auto py-[11.2px] border border-solid border-black rounded-full px-8 mt-[56px] max-md:mt-10 max-sm:mt-6">
               View All
             </button>
           </div>
